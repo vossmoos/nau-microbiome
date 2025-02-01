@@ -2,9 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+local_rundemo.py
 # C extensions
 *.so
+pymakr.conf
 
 # Distribution / packaging
 .Python

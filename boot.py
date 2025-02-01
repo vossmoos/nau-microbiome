@@ -1,1 +1,1 @@
-# boot file
+# boot.py -- run on boot-up

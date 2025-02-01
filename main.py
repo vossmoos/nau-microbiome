@@ -1,9 +1,9 @@
-import machine
+from machine import UART, Pin
 from commands.scenario_command import ScenarioCommand
 
 # Initialize UART for command input
-uart = machine.UART(0, 115200)
-uart.init(115200, bits=8, parity=None, stop=1)
+uart = UART(1, baudrate=115200, tx=Pin(43), rx=Pin(44))  # Adjust pins if needed
+uart.init(baudrate=115200, bits=8, parity=None, stop=1)
 
 def process_command(raw_command):
     # Trim and uppercase the command

@@ -5,14 +5,14 @@ class DemoScenario:
     def __init__(self):
         # Initialize motor with PWM control
         self.motor = MotorDriver(
-            enable_pin=12,  # PWM pin
-            in1_pin=14,
-            in2_pin=27
+            enable_pin=9,  # PWM pin
+            in1_pin=8,
+            in2_pin=7
         )
 
     def run(self):
         # Smooth acceleration demo
-        for speed in range(0, 101, 10):
+        for speed in range(0, 200, 10):
             self.motor.clockwise(speed)
             time.sleep(0.5)
         
