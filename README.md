@@ -1,6 +1,6 @@
-# Nau Microbiome: MicroPython Framework for ESP32 (UART Version)
+# Nau Microbiome
 
-This framework allows to control an ESP32 microcontroller via UART commands. It supports motor control, scenario execution, and extensibility for additional hardware and commands.
+MicroPython Framework for ESP32 (UART Version). This framework allows to control an ESP32 microcontroller via UART commands. It supports motor control, scenario execution, and extensibility for additional hardware and commands.
 
 ---
 
